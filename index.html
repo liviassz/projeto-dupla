@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Bebidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍹 BEEFEATER  
+            LONDON DRY GIN</h1>
+    </header>
+
+    <!-- Espaço para colocar sua imagem -->
+    <div class="imagem">
+        <img src="img.png" alt="Imagem">
+    </div>
+
+    <h2 class="titulo">Gerenciar suas bebidas</h2>
+    <p class="subtitulo">Cadastre e organize suas bebidas de forma fácil</p>
+
+    <main>
+
+        <div class="card">
+            <div class="icone">☰</div>
+            <h3>Listar todos</h3>
+            <p>Liste todas as bebidas cadastradas</p>
+            <button onclick="listarTodos()">Listar todos</button>
+        </div>
+
+        <div class="card">
+            <div class="icone">⌫</div>
+            <h3>Deletar</h3>
+            <p>Digite o ID da bebida que deseja apagar</p>
+            <button onclick="removerBebida()">Apagar por ID</button>
+        </div>
+
+        <div class="card">
+            <div class="icone">⊞</div>
+            <h3>Nova bebida</h3>
+            <p>Cadastre uma nova bebida para vender</p>
+            <button onclick="criarBebida()">Cadastrar bebida</button>
+        </div>
+
+        <div class="card">
+            <div class="icone">♲</div>
+            <h3>Limpar</h3>
+            <p>Apague todas as bebidas cadastradas</p>
+            <button onclick="LimparTodasBebidas()">Apagar tudo</button>
+        </div>
+
+        <div class="card">
+            <div class="icone">━</div>
+            <h3>Remover último</h3>
+            <p>Remova a última bebida cadastrada</p>
+            <button onclick="removerUltimo()">Apagar último</button>
+        </div>
+
+        <div class="card">
+            <div class="icone">⌕</div>
+            <h3>Buscar</h3>
+            <p>Procure uma bebida pelo nome</p>
+            <button onclick="buscarBebidas()">Buscar bebida</button>
+        </div>
+
+    </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
